@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد عصام أسعد | مطور ومصمم واجهات المستخدم</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="icon" href="https://i.ibb.co/XYv2p6N/Gemini-Generated-Image-5ksema5ksema5kse.jpg" type="image/png">
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg-shape {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(45deg, #fb923c, #f97316);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation: morph 8s ease-in-out infinite;
+            z-index: 0;
+            opacity: 0.15;
+        }
+
+        @keyframes morph {
+            0% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+            50% {
+                border-radius: 60% 40% 30% 70% / 60% 70% 30% 40%;
+            }
+            100% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+        }
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #f97316;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #fb923c;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white selection:bg-orange-500 selection:text-white">
+
+    <header id="main-header" class="bg-gray-900/80 backdrop-blur-sm fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-orange-500">أحمد عصام</a>
+            <nav class="hidden md:flex items-center space-x-8 lg:space-x-12">
+                <a href="#about" class="hover:text-orange-500 transition-colors duration-300">عني</a>
+                <a href="#services" class="hover:text-orange-500 transition-colors duration-300">خدماتي</a>
+                <a href="#experience" class="hover:text-orange-500 transition-colors duration-300">خبراتي</a>
+                <a href="#portfolio" class="hover:text-orange-500 transition-colors duration-300">أعمالي</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                تواصل معي
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                ☰
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+             <a href="#about" class="block text-center py-3 px-4 hover:bg-orange-500 transition-colors duration-300">عني</a>
+             <a href="#services" class="block text-center py-3 px-4 hover:bg-orange-500 transition-colors duration-300">خدماتي</a>
+             <a href="#experience" class="block text-center py-3 px-4 hover:bg-orange-500 transition-colors duration-300">خبراتي</a>
+             <a href="#portfolio" class="block text-center py-3 px-4 hover:bg-orange-500 transition-colors duration-300">أعمالي</a>
+             <a href="#contact" class="block text-center py-3 px-4 bg-orange-600 hover:bg-orange-700 transition-colors duration-300">تواصل معي</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <section id="about" class="container mx-auto px-6 py-24 min-h-screen flex items-center overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-left" class="text-center md:text-right z-10">
+                    <span class="text-orange-500 text-lg font-semibold">مرحباً بك!</span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold my-4 leading-tight">
+                        أنا أحمد عصام، <span class="text-orange-500">مطور تطبيقات</span> ومصمم واجهات المستخدم.
+                    </h1>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                        خريج جامعي من جامعة صنعاء، أمتلك شغفًا بتحويل الأفكار إلى واقع ملموس عبر تطبيقات ويب وهواتف ذكية ذات تصميم جذاب وتجربة استخدام فريدة.
+                    </p>
+                    <div class="flex justify-center md:justify-end gap-4">
+                        <a href="#portfolio" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+                            شاهد أعمالي
+                        </a>
+                        <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+                            لنتحدث
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-right" class="relative flex justify-center items-center">
+                    <div class="hero-bg-shape"></div>
+                    <img src="https://i.ibb.co/XYv2p6N/Gemini-Generated-Image-5ksema5ksema5kse.jpg" alt="أحمد عصام أسعد" class="relative z-10 w-4/5 max-w-sm rounded-full shadow-2xl border-4 border-orange-500/50">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold">خدماتي</h2>
+                    <p class="text-gray-400 mt-2">ما الذي أقدمه لمساعدتك في تحقيق أهدافك الرقمية.</p>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:shadow-orange-500/20 transform hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-orange-500 text-5xl mb-4">💻</div>
+                        <h3 class="text-2xl font-bold mb-3">تطوير تطبيقات الويب</h3>
+                        <p class="text-gray-400">بناء تطبيقات ويب متكاملة، سريعة، وآمنة باستخدام أحدث التقنيات وأطر العمل العصرية لضمان أفضل أداء.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:shadow-orange-500/20 transform hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-orange-500 text-5xl mb-4">🎨</div>
+                        <h3 class="text-2xl font-bold mb-3">تصميم واجهات المستخدم (UI/UX)</h3>
+                        <p class="text-gray-400">تصميم واجهات مستخدم جذابة وسهلة الاستخدام، مع التركيز على تحسين تجربة المستخدم لزيادة التفاعل والرضا.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:shadow-orange-500/20 transform hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-orange-500 text-5xl mb-4">📊</div>
+                        <h3 class="text-2xl font-bold mb-3">تحليل وتصميم قواعد البيانات</h3>
+                        <p class="text-gray-400">هيكلة وتنظيم قواعد البيانات بكفاءة لدعم التطبيقات البرمجية وضمان سلامة وسرعة استرجاع البيانات.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold">مؤهلاتي وخبراتي</h2>
+                    <p class="text-gray-400 mt-2">رحلتي في عالم التكنولوجيا والتعليم.</p>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div data-aos="fade-right">
+                        <h3 class="text-3xl font-bold mb-8">المؤهلات الدراسية</h3>
+                        <div class="relative border-r-2 border-orange-500/30 pr-8 space-y-8">
+                            <div class="relative">
+                                <div class="absolute -right-3.5 top-1 w-6 h-6 bg-orange-500 rounded-full border-4 border-gray-900"></div>
+                                <p class="text-gray-400">سبتمبر 2022 - حتى الآن</p>
+                                <h4 class="text-xl font-bold mt-1">طالب جامعي - تكنولوجيا المعلومات</h4>
+                                <p class="text-orange-400 font-semibold">جامعة صنعاء</p>
+                                <p class="text-gray-300 mt-2">
+                                    أتعلم تقنيات تطوير تطبيقات الويب والهواتف، تصميم واجهات المستخدم، وأمان التطبيقات.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left">
+                        <h3 class="text-3xl font-bold mb-8">الخبرة العملية والتدريب</h3>
+                        <div class="relative border-r-2 border-orange-500/30 pr-8 space-y-8">
+                            <div class="relative">
+                                <div class="absolute -right-3.5 top-1 w-6 h-6 bg-orange-500 rounded-full border-4 border-gray-900"></div>
+                                <p class="text-gray-400">مايو 2025 (متوقع)</p>
+                                <h4 class="text-xl font-bold mt-1">تدريب عملي</h4>
+                                <p class="text-orange-400 font-semibold">شركة "ماس" - إحدى شركات هائل سعيد أنعم</p>
+                                <p class="text-gray-300 mt-2">
+                                    المشاركة في تطوير تطبيقات عملية، تطبيق ممارسات الأمان، والعمل ضمن فريق تطوير.
+                                </p>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute -right-3.5 top-1 w-6 h-6 bg-orange-500 rounded-full border-4 border-gray-900"></div>
+                                <p class="text-gray-400">نوفمبر 2024</p>
+                                <h4 class="text-xl font-bold mt-1">دورة تدريبية في UI/UX</h4>
+                                <p class="text-orange-400 font-semibold">مؤسسة تدريبية</p>
+                                <p class="text-gray-300 mt-2">
+                                    تدريب مكثف على تطوير واجهات المستخدم بأساليب مبتكرة وتصميم نماذج أولية تفاعلية.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-24 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold">معرض أعمالي</h2>
+                    <p class="text-gray-400 mt-2">نماذج من المشاريع التي عملت عليها.</p>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <a href="https://github.com/ahmed7git/Flutter_project.git" target="_blank" rel="noopener noreferrer" class="block bg-gray-900 rounded-lg overflow-hidden group" data-aos="zoom-in">
+                        <div class="relative">
+                             <img src="https://placehold.co/600x400/1f2937/fb923c?text=AI+Dermatology+App" alt="تطبيق تحليل الفطريات الجلدية" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                             <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-white text-lg font-bold border-2 border-white py-2 px-4 rounded">عرض المشروع</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">تحليل الفطريات الجلدية بالذكاء الاصطناعي</h3>
+                            <p class="text-gray-400 mt-2">تطبيق Flutter يكتشف نوع الفطريات الجلدية ومدى خطورتها باستخدام نماذج الذكاء الاصطناعي.</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/ahmed7git/absher.git" target="_blank" rel="noopener noreferrer" class="block bg-gray-900 rounded-lg overflow-hidden group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="relative">
+                            <img src="https://placehold.co/600x400/1f2937/fb923c?text=Absher+App" alt="تطبيق أبشر للنقل والشحن" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-white text-lg font-bold border-2 border-white py-2 px-4 rounded">عرض المشروع</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">تطبيق أبشر لخدمات النقل</h3>
+                            <p class="text-gray-400 mt-2">تطبيق لخدمات النقل والشحن، يتيح التسجيل للعملاء ومقدمي الخدمات لتسهيل عمليات التوصيل.</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/ahmed7git/Web_Project.git" target="_blank" rel="noopener noreferrer" class="block bg-gray-900 rounded-lg overflow-hidden group" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="relative">
+                            <img src="https://placehold.co/600x400/1f2937/fb923c?text=AI+Dermatology+Web" alt="موقع تحليل الفطريات الجلدية" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="text-white text-lg font-bold border-2 border-white py-2 px-4 rounded">عرض المشروع</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">موقع تحليل الفطريات الجلدية</h3>
+                            <p class="text-gray-400 mt-2">نسخة ويب لتطبيق اكتشاف الفطريات الجلدية، تتيح تحليل الصور مباشرة عبر المتصفح.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold">لنتواصل ونتعاون</h2>
+                    <p class="text-gray-400 mt-2">هل لديك فكرة مشروع؟ لا تتردد في التواصل معي.</p>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="max-w-4xl mx-auto bg-gray-800 p-8 md:p-12 rounded-xl shadow-lg" data-aos="fade-up">
+                   <div class="grid md:grid-cols-2 gap-12">
+                       <div>
+                           <h3 class="text-2xl font-bold mb-6">معلومات التواصل</h3>
+                           <div class="space-y-6">
+                               <div class="flex items-center space-x-4 space-x-reverse">
+                                   <div class="bg-orange-500/20 text-orange-400 p-3 rounded-full text-2xl">📧</div>
+                                   <div>
+                                       <h4 class="font-semibold">البريد الإلكتروني</h4>
+                                       <a href="mailto:ahmedasaad_std@iutt_edu.ye" class="text-gray-300 hover:text-orange-400 block">ahmedasaad_std@iutt_edu.ye</a>
+                                       <a href="mailto:ahmedesmm@gmail.com" class="text-gray-300 hover:text-orange-400 block">ahmedesmm@gmail.com</a>
+                                   </div>
+                               </div>
+                               <div class="flex items-center space-x-4 space-x-reverse">
+                                   <div class="bg-orange-500/20 text-orange-400 p-3 rounded-full text-2xl">📞</div>
+                                   <div>
+                                       <h4 class="font-semibold">الهاتف</h4>
+                                       <a href="tel:+967773799744" class="text-gray-300 hover:text-orange-400">+967 773 799 744</a>
+                                   </div>
+                               </div>
+                                <div class="flex items-center space-x-4 space-x-reverse">
+                                   <div class="bg-orange-500/20 text-orange-400 p-3 rounded-full text-2xl">📍</div>
+                                   <div>
+                                       <h4 class="font-semibold">الموقع</h4>
+                                       <p class="text-gray-300">صنعاء, اليمن</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                        <form>
+                            <div class="space-y-4">
+                                <input type="text" placeholder="الاسم الكامل" class="w-full bg-gray-900 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-orange-500 p-3 transition">
+                                <input type="email" placeholder="البريد الإلكتروني" class="w-full bg-gray-900 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-orange-500 p-3 transition">
+                                <textarea placeholder="رسالتك..." rows="5" class="w-full bg-gray-900 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-orange-500 p-3 transition"></textarea>
+                                <button type="submit" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                                    إرسال الرسالة
+                                </button>
+                            </div>
+                        </form>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 border-t border-gray-700 mt-24">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <p>&copy; 2025 | صُنع بواسطة أحمد عصام أسعد</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
+
